@@ -61,7 +61,7 @@ public class Assignment1 {
 		if (sum1 < 100.00) { //DISCOUNT 10% IF SUM1 LESS THAN 100 
 			double discount1 = (sum1*10)/100; //DISCOUNT IN DECIMAL
 			double sum2 = sum1 - discount1; // SUM IN DECIMAL
-			   System.out.printf("%-10s%7.2f%n","Total price:RM" , sum1);// PRINT OUT TOTAL PRICE
+		       System.out.printf("%-10s%7.2f%n","Total price:RM" , sum1);// PRINT OUT TOTAL PRICE
 		       System.out.printf("%-10s%7.2f%n","Discount received:RM" , discount1);//PRINT OUT DISCOUNT
 		       System.out.printf("%-10s%7.2f%n","Price to be paid :RM" , sum2);//PRINT OUT PRICE TO PAID
 		       }
