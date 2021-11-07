@@ -1,13 +1,13 @@
 Enter the number of item:3
-Enter the price of the math book:50
+Enter the price of the math book:RM50
 Enter the quantity of the math book:2
 
-Enter the price of the math book:20
+Enter the price of the math book:RM20
 Enter the quantity of the math book:2
 
-Enter the price of the school bag:40
+Enter the price of the school bag:RM40
 Enter the quantity of the school bag:1
 
-Total price:180.0
-Discount receive:36.0
-Price to be paid:144.0
+Total price:RM180.0
+Discount receive:RM36.0
+Price to be paid:RM144.0
