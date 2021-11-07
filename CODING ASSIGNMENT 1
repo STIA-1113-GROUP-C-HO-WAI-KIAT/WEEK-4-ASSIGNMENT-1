@@ -60,10 +60,12 @@ public class Assignment1 {
 	  
 	    System.out.println("Total price:RM" + sum1);//PRINT OUT TOTAL PRICE BEFORE DISCOUNT
 	    System.out.print("Discount receive:RM");//PRINT OUT DISCOUNT RECEIVE
+	    
 	    if (sum1 > 100)  // IF MORE THAN 100 DISCOUNT 20%
 		    System.out.println(sum1 * 0.2);//PRINT OUT DISCOUNT
 	    if (sum1 < 100)// IF LESS THAN 100 DISCOUNT 10%
 		    System.out.println(sum1 * 0.1);//PRINT OUT DISCOUNT
+		    
 	    sum2=(sum1 -sum1 * 0.1);//CALCULATION OF TOTAL PRICE 1
 	    sum2=(sum1 -sum1 * 0.2);//CALCULATION OF TOTAL PRICE 2
 	    
