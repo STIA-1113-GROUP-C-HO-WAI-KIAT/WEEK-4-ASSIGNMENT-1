@@ -14,11 +14,11 @@ public class Assignment1 {
 		int item3;// ITEM IN INTEGER
 		int quantity3;//QUANTITY IN INTEGER
 		double sum1;//SUM WITH DECIMAL
-	        double sum2;//SUM WITH DECIMAL
+	    
 				
 	    Scanner sc = new Scanner (System.in);// SCANNER FOR ENTER NUMBER
 		
-            System.out.println("Enter the number of item:");//ENTER THE NUMBER OF ITEM
+        System.out.println("Enter the number of item:");//ENTER THE NUMBER OF ITEM
 	    number = sc.nextInt();//ENTER THE NUMBER
 	    
 	    System.out.println("Enter the price of the math book:");//ENTER THE PRICE OF ITEM
@@ -58,24 +58,21 @@ public class Assignment1 {
 	    
 	    sum1=(item1 * quantity1)+(item2 * quantity2)+(item3 * quantity3);//CALCULATION OF THE TOTAL PRICE BEFORE DISCOUNT
 	  
-	    System.out.println("Total price:RM" + sum1);//PRINT OUT TOTAL PRICE BEFORE DISCOUNT
-	    System.out.print("Discount receive:RM");//PRINT OUT DISCOUNT RECEIVE
-	    
-	    if (sum1 > 100)  // IF MORE THAN 100 DISCOUNT 20%
-		    System.out.println(sum1 * 0.2);//PRINT OUT DISCOUNT
-	    if (sum1 < 100)// IF LESS THAN 100 DISCOUNT 10%
-		    System.out.println(sum1 * 0.1);//PRINT OUT DISCOUNT
-		    
-	    sum2=(sum1 -sum1 * 0.1);//CALCULATION OF TOTAL PRICE 1
-	    sum2=(sum1 -sum1 * 0.2);//CALCULATION OF TOTAL PRICE 2
-	    
-	    System.out.println("Price to be paid:RM" + sum2);//PRINT OUT TOTAL PRICE
-	    
-	    
+		if (sum1 < 100.00) { //DISCOUNT 10% IF SUM1 LESS THAN 100 
+			double discount1 = (sum1*10)/100; //DISCOUNT IN DECIMAL
+			double sum2 = sum1 - discount1; // SUM IN DECIMAL
+			   System.out.printf("%-10s%7.2f%n","Total price:RM" , sum1);// PRINT OUT TOTAL PRICE
+		       System.out.printf("%-10s%7.2f%n","Discount received:RM" , discount1);//PRINT OUT DISCOUNT
+		       System.out.printf("%-10s%7.2f%n","Price to be paid :RM" , sum2);//PRINT OUT PRICE TO PAID
+		       }
 		
-		
-		
-		
+		if (sum1 > 100.00) {//DISCOUNT 20% IF SUM1 MORE THAN 100 
+			double discount2 = (sum1*20)/100; //DISCOUNT IN DECIMAL
+			double sum3 = sum1 - discount2;// SUM IN DECIMAL
+		       System.out.printf("%-10s%7.2f%n","Total price:RM" , sum1);// PRINT OUT TOTAL PRICE
+		       System.out.printf("%-10s%7.2f%n","Discount received:RM" , discount2);//PRINT OUT DISCOUNT
+		       System.out.printf("%-10s%7.2f%n","Price to be paid :RM" , sum3);//PRINT OUT PRICE TO PAID
+		       }	
+	}
 	}
 
-}
