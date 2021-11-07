@@ -1,0 +1,82 @@
+package assignment1;
+
+import java.util.Scanner;
+
+public class Assignment1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int number; // ALL OF THE INTEGER 
+		int item1;
+		int quantity1;
+		int item2;
+		int quantity2;
+		int item3;
+		int quantity3;
+		double sum1;
+	    double sum2;
+		
+		
+		
+		
+		Scanner sc = new Scanner (System.in);// SCANNER FOR ENTER NUMBER
+		
+		System.out.println("Enter the number of item:");
+	    number = sc.nextInt();
+	    
+	    System.out.println("Enter the price of the math book:");
+	    item1 = sc.nextInt();
+	    
+	    System.out.println("Enter the quantity of the math book:");
+	    quantity1 = sc.nextInt();
+	    
+	    System.out.println("Enter the price of the pencil box:");
+	    item2 = sc.nextInt();
+	    
+	    System.out.println("Enter the quantity of the pencil box:");
+	    quantity2 = sc.nextInt();
+		
+	    System.out.println("Enter the price of the school bag:");
+	    item3 = sc.nextInt();
+	    
+	    System.out.println("Enter the quantity of the school bag:");
+	    quantity3 = sc.nextInt();
+	    
+	    System.out.println("Enter the number of item:" + number); // TO BECOME OUTPUT
+	  
+	    System.out.println("Enter the price of the math book:" + item1);
+	    System.out.println("Enter the quantity of the math book:" + quantity1);
+	    
+	    System.out.println();
+	    
+	    System.out.println("Enter the price of the math book:" + item2);
+	    System.out.println("Enter the quantity of the math book:" + quantity2);
+	    
+	    System.out.println();
+	    
+	    System.out.println("Enter the price of the school bag:" + item3);
+	    System.out.println("Enter the quantity of the school bag:" + quantity3);
+	    
+	    System.out.println();
+	    
+	    sum1=(item1 * quantity1)+(item2 * quantity2)+(item3 * quantity3);
+	  
+	    System.out.println("Total price:" + sum1);//TOTAL PRICE BEFORE DISCOUNT
+	    System.out.print("Discount receive:");
+	    if (sum1 > 100)  // IF MORE THAN 100 DISCOUNT 20%
+		    System.out.println(sum1 * 0.2);
+	    if (sum1 < 100)// IF LESS THAN 100 DISCOUNT 10%
+		    System.out.println(sum1 * 0.1);
+	    sum2=(sum1 -sum1 * 0.1);
+	    sum2=(sum1 -sum1 * 0.2);
+	    
+	    System.out.println("Price to be paid:" + sum2);
+	    
+	    
+		
+		
+		
+		
+	}
+
+}
