@@ -6,71 +6,68 @@ public class Assignment1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int number; // ALL OF THE INTEGER 
-		int item1;
-		int quantity1;
-		int item2;
-		int quantity2;
-		int item3;
-		int quantity3;
-		double sum1;
-	    double sum2;
+		int number; //NUMBER IN INTEGER 
+		int item1;// ITEM IN INTEGER
+		int quantity1;//QUANTITY IN INTEGER
+		int item2;// ITEM IN INTEGER
+		int quantity2;//QUANTITY IN INTEGER
+		int item3;// ITEM IN INTEGER
+		int quantity3;//QUANTITY IN INTEGER
+		double sum1;//SUM WITH DECIMAL
+	        double sum2;//SUM WITH DECIMAL
+				
+	    Scanner sc = new Scanner (System.in);// SCANNER FOR ENTER NUMBER
 		
-		
-		
-		
-		Scanner sc = new Scanner (System.in);// SCANNER FOR ENTER NUMBER
-		
-		System.out.println("Enter the number of item:");
-	    number = sc.nextInt();
+            System.out.println("Enter the number of item:");//ENTER THE NUMBER OF ITEM
+	    number = sc.nextInt();//ENTER THE NUMBER
 	    
-	    System.out.println("Enter the price of the math book:");
-	    item1 = sc.nextInt();
+	    System.out.println("Enter the price of the math book:");//ENTER THE PRICE OF ITEM
+	    item1 = sc.nextInt();//ENTER THE PRICE 
 	    
-	    System.out.println("Enter the quantity of the math book:");
-	    quantity1 = sc.nextInt();
+	    System.out.println("Enter the quantity of the math book:");//ENTER THE QUANTITY OF ITEM
+	    quantity1 = sc.nextInt();//ENTER THE QUANTITY 
 	    
-	    System.out.println("Enter the price of the pencil box:");
-	    item2 = sc.nextInt();
+	    System.out.println("Enter the price of the pencil box:");//ENTER THE PRICE OF ITEM
+	    item2 = sc.nextInt();//ENTER THE PRICE 
 	    
-	    System.out.println("Enter the quantity of the pencil box:");
-	    quantity2 = sc.nextInt();
+	    System.out.println("Enter the quantity of the pencil box:");//ENTER THE QUANTITY OF ITEM
+	    quantity2 = sc.nextInt();//ENTER THE QUANTITY 
 		
-	    System.out.println("Enter the price of the school bag:");
-	    item3 = sc.nextInt();
+	    System.out.println("Enter the price of the school bag:");//ENTER THE PRICE OF ITEM
+	    item3 = sc.nextInt();//ENTER THE PRICE 
 	    
-	    System.out.println("Enter the quantity of the school bag:");
-	    quantity3 = sc.nextInt();
+	    System.out.println("Enter the quantity of the school bag:");//ENTER THE QUANTITY OF ITEM
+	    quantity3 = sc.nextInt();//ENTER THE QUANTITY 
 	    
 	    System.out.println("Enter the number of item:" + number); // TO BECOME OUTPUT
 	  
-	    System.out.println("Enter the price of the math book:RM" + item1);
-	    System.out.println("Enter the quantity of the math book:" + quantity1);
+	    System.out.println("Enter the price of the math book:RM" + item1);//PRINT OUT THE PRICE OF ITEM
+	    System.out.println("Enter the quantity of the math book:" + quantity1);//PRINT OUT THE QUANTITY OF ITEM
 	    
-	    System.out.println();
+	    System.out.println();//SPACE
 	    
-	    System.out.println("Enter the price of the math book:RM" + item2);
-	    System.out.println("Enter the quantity of the math book:" + quantity2);
+	    System.out.println("Enter the price of the math book:RM" + item2);//PRINT OUT THE PRICE OF ITEM
+	    System.out.println("Enter the quantity of the math book:" + quantity2);//PRINT OUT THE QUANTITY OF ITEM
 	    
-	    System.out.println();
+	    System.out.println();// SPACE
 	    
-	    System.out.println("Enter the price of the school bag:RM" + item3);
-	    System.out.println("Enter the quantity of the school bag:" + quantity3);
+	    System.out.println("Enter the price of the school bag:RM" + item3);//PRINT OUT THE PRICE OF ITEM
+	    System.out.println("Enter the quantity of the school bag:" + quantity3);//PRINT OUT THE QUANTITY OF ITEM
 	    
-	    System.out.println();
+	    System.out.println();//SPACE
 	    
-	    sum1=(item1 * quantity1)+(item2 * quantity2)+(item3 * quantity3);
+	    sum1=(item1 * quantity1)+(item2 * quantity2)+(item3 * quantity3);//CALCULATION OF THE TOTAL PRICE BEFORE DISCOUNT
 	  
-	    System.out.println("Total price:RM" + sum1);//TOTAL PRICE BEFORE DISCOUNT
-	    System.out.print("Discount receive:RM");
+	    System.out.println("Total price:RM" + sum1);//PRINT OUT TOTAL PRICE BEFORE DISCOUNT
+	    System.out.print("Discount receive:RM");//PRINT OUT DISCOUNT RECEIVE
 	    if (sum1 > 100)  // IF MORE THAN 100 DISCOUNT 20%
-		    System.out.println(sum1 * 0.2);
+		    System.out.println(sum1 * 0.2);//PRINT OUT DISCOUNT
 	    if (sum1 < 100)// IF LESS THAN 100 DISCOUNT 10%
-		    System.out.println(sum1 * 0.1);
-	    sum2=(sum1 -sum1 * 0.1);
-	    sum2=(sum1 -sum1 * 0.2);
+		    System.out.println(sum1 * 0.1);//PRINT OUT DISCOUNT
+	    sum2=(sum1 -sum1 * 0.1);//CALCULATION OF TOTAL PRICE 1
+	    sum2=(sum1 -sum1 * 0.2);//CALCULATION OF TOTAL PRICE 2
 	    
-	    System.out.println("Price to be paid:RM" + sum2);
+	    System.out.println("Price to be paid:RM" + sum2);//PRINT OUT TOTAL PRICE
 	    
 	    
 		
